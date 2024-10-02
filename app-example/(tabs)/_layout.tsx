@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="holi"
+        options={{
+          title: 'Holi',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'color-palette' : 'color-palette-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
