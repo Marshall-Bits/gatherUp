@@ -12,15 +12,16 @@ export default function Home() {
     <LinearGradient colors={['#6a11cb', '#2575fc']} style={styles.container}>
       <View style={styles.content}>
         <Ionicons name="people-circle-outline" size={100} color="#fff" />
-        <Text style={styles.title}>Welcome to GatherUp</Text>
-        <Text style={styles.subtitle}>Connect. Organize. Enjoy.</Text>
+        <Text style={styles.title}>GatherUp</Text>
+        <Text style={styles.subtitle}>Connect  |  Organize  |  Enjoy</Text>
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => router.push('/create-event')}
+          onPress={() => router.push('/auth-form')}
         >
-          <Text style={styles.buttonText}>Create an Event</Text>
+          <Text style={styles.buttonText}>Join</Text>
         </TouchableOpacity>
+      
       </View>
     </LinearGradient>
   );
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   title: {
-    fontSize: 34,
+    fontSize: 50,
     color: '#fff',
     fontWeight: '700',
     marginTop: 20,
@@ -56,9 +57,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     marginTop: 30,
     elevation: 2,
+    width: 250,
   },
   buttonText: {
     color: '#2575fc',
+    textAlign: 'center',
     fontSize: 18,
     fontWeight: '600',
   },

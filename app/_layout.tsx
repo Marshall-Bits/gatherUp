@@ -13,6 +13,10 @@ export default function Layout() {
         name="create-event" 
         options={{ title: 'Create Event' }}  // This sets a custom title
       />
+      <Stack.Screen 
+        name="auth-form" 
+        options={{ title: 'Login/Signup' }}  // This sets a custom title
+      />
     </Stack>
   );
 }
